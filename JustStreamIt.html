@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/elfi9/PycharmProjects/projet_6/JustStreamIt.html -->
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JustStreamIt</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="JustStreamIt.js"></script>
+       
+    </head>
+    <body>
+        <header>
+            <h1>JustStreamIt</h1>
+            <nav>
+                <ul>
+                    <li><a href="" style="color:#FFFFFF;">Accueil</a></li>
+                    <li><a href="" style="color:#FFFFFF;">Catégories</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="thebest" class="thebest">
+            <h2>Best Movie</h2>
+            <div id="bm">
+				<img id="ImgBestMovie" src="" alt="Image Meilleur Film">
+				<div id="TitleBestMovie"></div>
+				<div id="Description_bm">
+				<button id="play" onclick="openmodale()">
+					<img id="redbutton" src="Images/play.png" alt="Play">
+				</button>
+				</div>
+			</div>
+        </section>
+        <section id= "BestMovies" class="carousel">
+            <h2>Top 7</h2>
+				<div class="left">
+					<button id="left_button_best">
+						<img src="Images/arrow_left.png" alt="<">
+					</button>
+				</div>
+				<div class="center" id="div_best_mov">
+				</div>
+				<div class="right">
+					<button id="right_button_best">
+						<img src="Images/arrow_right.png" alt=">">
+					</button>
+				</div>
+        </section>
+        <section class="carousel">
+            <h2>Adventure</h2>
+			<div class="left">
+					<button id="left_button_adventure">
+						<img src="Images/arrow_left.png" alt="<">
+					</button>
+				</div>
+				<div class="center" id="div_adventure_mov">
+				</div>
+				<div class="right">
+					<button id="right_button_adventure">
+						<img src="Images/arrow_right.png" alt=">">
+					</button>
+				</div>
+        </section>
+        <section class="carousel">
+            <h2>Comedy</h2>
+			<div class="left">
+					<button id="left_button_comedy">
+						<img src="Images/arrow_left.png" alt="<">
+					</button>
+				</div>
+				<div class="center" id="div_comedy_mov">
+				</div>
+				<div class="right">
+					<button id="right_button_comedy">
+						<img src="Images/arrow_right.png" alt=">">
+					</button>
+				</div>
+        </section>
+        <section class="carousel">
+            <h2>Horror</h2>
+				<div class="left">
+					<button id="left_button_horror">
+						<img src="Images/arrow_left.png" alt="<">
+					</button>
+				</div>
+				<div class="center" id="div_horror_mov">
+				</div>
+				<div class="right">
+					<button id="right_button_horror">
+						<img src="Images/arrow_right.png" alt=">">
+					</button>
+				</div>
+        </section>
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<img id="img_modal" alt="">
+			<div id="title_modal"></div>
+			<div id="movie_modal"></div>
+		</div>
+    </body>
+    <script type="text/javascript">
+		getbestmovies();
+		getmovies_by_genre("Adventure","div_adventure_mov");		
+		getmovies_by_genre("Comedy","div_comedy_mov");		
+		getmovies_by_genre("Horror","div_horror_mov");	
+	</script>
+</html>

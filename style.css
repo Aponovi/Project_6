@@ -1,0 +1,181 @@
+header{  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav{
+	font-size: 40px;
+}
+
+
+li{
+	padding: inherit;
+}
+
+body{
+    background-color: black;
+    color: white;
+	width: 100%;
+}
+
+h1
+{
+    font-size: 80px;
+}
+
+h2{
+	text-align: center;
+	font-size: 50px;
+}
+
+img {
+	width: 15%;
+	height: 100%;
+}
+
+img:hover {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	opacity: 0.5
+}
+
+
+#TitleBestMovie{
+	font-size: 40px;
+	margin: 20px;
+}
+
+#ImgBestMovie{
+	float: right;
+	width:50%;
+}
+#ImgBestMovie:hover{
+	border: 0px;
+	border-radius: 0px;
+	opacity: 1;
+}
+
+#play{
+	margin-block:0px;
+	width: 50%;
+}
+
+#redbutton{
+	width: 40%;
+}
+
+
+ul{
+  list-style-type:none;
+  display: flex;
+}
+
+button{
+	color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+	margin-block: 50px;
+}
+#bm{
+	width:40%;
+	margin:auto;
+}
+
+.carousel{
+	display: inline-block;
+}
+
+
+.left{
+ float: left; 
+ width: 10%;
+ height: 200px;
+ border: 1px solid black;
+}
+
+.internal{
+
+ width: 5%;
+ height: 100%;
+ border: 1px solid black;
+ display: inline-block;
+}
+
+.center{
+ float: left; 
+ width: 78.9%;
+ height: 200px;
+ border: 1px solid black;
+ margin: 1px;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.right{
+ float: right; 
+ width: 10%;
+ height: 200px;
+ border: 1px solid black;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60%; /* Could be more or less, depending on screen size */
+	color:black;
+    height: fit-content;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;  
+}
+
+#img_modal{
+	float: right;
+    height: 100%;
+    width: auto;
+}
+
+#img_modal:hover{
+	border: 0px;
+	border-radius: 0px;
+	opacity: 1;
+}
+
+#title_modal{
+	font-size: 40px;
+	margin: 20px;
+	align:center;
+}
