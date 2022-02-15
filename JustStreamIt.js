@@ -148,16 +148,6 @@ function displaymovies(movie,i,id){
 	div.innerHTML = div.innerHTML+"</div>";
 	var btn = document.getElementById("img_"+ movie.id);
 	console.log(btn)
-	/*btn.onclick=function(){
-					console.log("ici là");
-
-		openmodal(movie.id);
-	}
-	/*btn.addEventListener("click", function(event) {
-			event.preventDefault();
-			console.log("ici là");
-			openmodal(movie.id);
-		});*/
 }
 
 

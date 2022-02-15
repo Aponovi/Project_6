@@ -22,10 +22,10 @@
         <section id="thebest" class="thebest">
             <h2>Best Movie</h2>
             <div id="bm">
-				<img id="ImgBestMovie" src="" alt="Image Meilleur Film">
+				<img id="ImgBestMovie" src="Images/Image_not_available.png" alt="Image Meilleur Film">
 				<div id="TitleBestMovie"></div>
 				<div id="Description_bm">
-				<button id="play" onclick="openmodale()">
+				<button id="play" onclick="openmodal()">
 					<img id="redbutton" src="Images/play.png" alt="Play">
 				</button>
 				</div>
@@ -92,17 +92,19 @@
 				</div>
         </section>
 		<div id="myModal" class="modal">
-		  <div class="modal-content">
-			<span class="close">&times;</span>
-			<img id="img_modal" alt="">
-			<div id="title_modal"></div>
-			<div id="movie_modal"></div>
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img id="img_modal" src="Images/Image_not_available.png" alt="close">
+				<div id="title_modal"></div>
+				<div id="movie_modal"></div>
+			</div>
 		</div>
+		<script>
+			getbestmovies();
+			getmovies_by_genre("Adventure","div_adventure_mov");		
+			getmovies_by_genre("Comedy","div_comedy_mov");		
+			getmovies_by_genre("Horror","div_horror_mov");	
+		</script>
     </body>
-    <script type="text/javascript">
-		getbestmovies();
-		getmovies_by_genre("Adventure","div_adventure_mov");		
-		getmovies_by_genre("Comedy","div_comedy_mov");		
-		getmovies_by_genre("Horror","div_horror_mov");	
-	</script>
+    
 </html>
